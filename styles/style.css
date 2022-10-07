@@ -86,6 +86,15 @@ main {
     font-size: 1rem;
     font-weight: bold;
     color: var(--light-grey);
+
+    transition: all 0.5s ease;
+}
+
+.rating-options option:hover {
+    cursor: pointer;
+    background: var(--light-grey);
+    box-shadow: 0px 0px 5px 2px var(--light-grey);
+    color: var(--white);
 }
 
 .container-select-rating button {
@@ -102,4 +111,24 @@ main {
     background-color: var(--orange);
     border-radius: 10px;
     border: none;
+
+    transition: all 0.5s ease;
+}
+
+.container-select-rating button:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 2px var(--orange);
+}
+
+/* Selected option */
+
+.active {
+    background: var(--orange) !important;
+    color: var(--white) !important;
+}
+
+.active:hover {
+    background: var(--orange) !important;
+    box-shadow: none !important;
 }
