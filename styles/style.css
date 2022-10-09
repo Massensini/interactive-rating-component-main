@@ -132,3 +132,42 @@ main {
     background: var(--orange) !important;
     box-shadow: none !important;
 }
+
+/* Thanks container */ 
+
+.thanks-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selected-rating-container {
+    width: 200px;
+    height: 31px;
+    margin-top: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--very-dark-blue);
+    border-radius: 15px;
+    color: var(--orange);
+}
+
+.thanks-p {
+    margin-top: 2rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.finished-p {
+    margin-top: 0.7rem;
+    
+    font-size: 1rem;
+    text-align: center;
+    line-height: 23px;
+    color: var(--medium-grey);
+}

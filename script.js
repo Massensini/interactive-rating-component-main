@@ -1,4 +1,5 @@
 const selectRatingContainer = document.querySelector('.container-select-rating')
+const thanksContainer = document.querySelector('.thanks-container')
 const options = Array.from(document.querySelectorAll('option'));
 const submitBtn = document.querySelector('.submit-btn')
 
@@ -21,4 +22,5 @@ options.forEach((e) => {
 
 submitBtn.addEventListener('click', () => {
     selectRatingContainer.style.display = 'none'
+    thanksContainer.style.display = 'flex'
 })
