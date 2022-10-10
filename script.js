@@ -1,3 +1,4 @@
+const main = document.querySelector('main')
 const selectRatingContainer = document.querySelector('.container-select-rating')
 const thanksContainer = document.querySelector('.thanks-container')
 const rating = document.querySelector('.rating-selected')
@@ -25,7 +26,7 @@ options.forEach((e) => {
 
 
 submitBtn.addEventListener('click', () => {
-
+    main.style.transform = 'rotateY(180deg)'
     selectRatingContainer.style.display = 'none'
     thanksContainer.style.display = 'flex'
 })
